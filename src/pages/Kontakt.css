@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Cubano Regular';
+  src: url('../font/Cubano.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular-1';
+  src: url('../font/AvenirNextLTPro-Regular-1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.kontakt-background {
+  padding-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px; /* lägger till en toppmarginal för estetiskt syfte */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  transition: all 0.2s ease;
+  margin-left: 29px;
+  margin-top: -27px;
+  font-family: 'Cubano Regular', sans-serif;
+  color: white;
+  display: block;
+}
+
+input {
+  background-color: rgba(255, 254, 254, 0.493); 
+  border-radius: 5px; 
+  border: none; 
+  padding: 8px 12px; 
+  font-size: 16px; 
+  color: #333; 
+  margin-bottom: 1rem; /* lägger till en avståndsmarginal mellan varje input */
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  position: relative;
+  height: 20px;
+  font-family: 'AvenirNextLTPro-Regular-1';
+  color: white;
+  padding-top: 18px;
+  width: 400px;
+}
+
+input:focus ~ label,
+textarea:focus ~ label {
+  top: -20px;
+  font-size: 0.8rem;
+  color: #007bff;
+  transition: all 0.2s ease;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+input[type="text"] {
+  text-indent: 8px;
+}
+
+input[type="tel"] {
+  text-indent: 8px;
+}
+
+input[type="email"] {
+  text-indent: 8px;
+}
+
+#meddelande::placeholder {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  }  
+
+.form-wrapper {
+  display: flex;
+  margin-left: -7px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Loggo__nav {
+  width: 250px;
+  height: 110px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.navbar {
+  width: 99%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  height: 82px;
+  width: 65%;
+  justify-content: flex-end;
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  transition: all 300ms ease;
+}
+
+.navbar ul li {
+  color: white;
+  font-family: 'Cubano Regular', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.navbar ul .strate__color_li {
+  color: rgb(205, 23, 25);
+}
+
+
+.responsive__bar__links {
+  display: none;
+}
+
+.responsive__navbar__link {
+  display: none;
+  color: white;
+  cursor: pointer;
+} 
+
+.toggle__btn {
+  color:white;
+  width:25px;
+  height:25px;
+  cursor: pointer;
+  display: none;
+  transition: all 300ms ease;
+}
+
+.close__btn {
+  display: none;
+  color:white; 
+  height:20px;
+  width:20px;
+  cursor: pointer;
+}
+
+.strate__color {
+  color: rgb(205, 23, 25);
+}
+
+.navbar p:hover {
+  cursor: pointer;
+}
+
+.background__k {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rubrik {
+  text-align: center;
+  color:white;
+  font-size: 50px;
+  font-family: "Cubano Regular", sans-serif;
+  margin-top: 130px;
+}
+
+.message {
+  /* width: 425px; */
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 254, 254, 0.493);
+}
+
+.btn__send {
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    background-color: rgb(205, 23, 25); 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.4);
+    font-family: "Cubano Regular", sans-serif;
+    z-index: 1;
+}
+
+@media screen and (max-width:860px){
+  .navbar ul {
+    display: none;
+}
+
+.Loggo__nav {
+  width: 200px;
+  height: 80px;
+  padding: 15px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+
+.toggle__btn {
+  display: block;
+  position: relative;
+  right: 10px;
+  bottom: 20px;
+  transition: all 300ms ease;
+}
+
+.close__btn {
+  display: block;
+}
+
+.navbar div {
+  background-color: rgb(84, 86, 90);
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  gap:1.5rem;
+  transition: 1s;
+  transform: translateY(-100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  z-index: 1000;
+
+}
+
+.responsive__navbar__link {
+  display: block;
+}
+
+.navbar .responsive__navbar {
+  transform: none;
+  height: 35%;
+  width:40%;
+  left:57%;
+  right: 0;
+}
+
+}
+
+
+@media screen and (max-width:560px){
+  .Loggo__nav {
+    width: 120px;
+    height: 70px;
+    padding: 10px;
+    cursor: pointer;
+    object-fit: contain;
+  }
+
+  .background__img{
+    height: 30vh;
+  }
+
+  .rubrik {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  label {
+    font-size: 17px;
+  }
+
+  input {
+    padding: 8px 0px;
+  }
+
+  .form {
+    max-width: 400px;
+  }
+
+  input::placeholder {
+    top:auto;
+    bottom: auto;
+  }
+
+  .toggle__btn {
+    bottom: 7px;
+  }
+}
+
+
